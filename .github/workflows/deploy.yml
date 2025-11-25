@@ -2,30 +2,23 @@ name: Deploy to Cloudflare Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy
     steps:
       - uses: actions/checkout@v4
-      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          
       - name: Install dependencies
         run: npm install
-        
       - name: Build and export
         run: npm run build && npm run export
-        
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
