@@ -9,11 +9,13 @@ export default defineConfig(({ mode }) => {
       build: {
         outDir: 'dist',
         sourcemap: false,
+        minify: 'esbuild',
         rollupOptions: {
           output: {
             manualChunks: {
               vendor: ['react', 'react-dom'],
-              ai: ['@google/generative-ai']
+              ai: ['@google/generative-ai'],
+              icons: ['lucide-react']
             }
           }
         }
