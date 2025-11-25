@@ -7,7 +7,7 @@
     "build": "vite build",
     "dev": "vite",
     "preview": "vite preview",
-    "deploy": "wrangler pages deploy dist"
+    "deploy": "echo 'Build complete, ready for deployment'"
   },
   "dependencies": {
     "@google/generative-ai": "^1.30.0",
