@@ -22,12 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Wrangler
-.wrangler/
-wrangler.toml.bak
-
-# Cloudflare
-.dev.vars
-.env.local
-.env.production

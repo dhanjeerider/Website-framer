@@ -508,7 +508,7 @@ git push -u origin main`}</pre>
                     <h3 className="text-xl font-bold text-white border-l-4 border-yellow-500 pl-4">Step 2: Cloudflare Pages</h3>
                     <ol className="list-decimal list-inside text-gray-400 space-y-3 ml-2">
                        <li>Log in to your <strong>Cloudflare Dashboard</strong>.</li>
-                       <li>Go to <strong>Workers &amp; Pages</strong> &gt; <strong>Create Application</strong> &gt; <strong>Pages</strong>.</li>
+                       <li>Go to <strong>Workers & Pages</strong> > <strong>Create Application</strong> > <strong>Pages</strong>.</li>
                        <li>Click <strong>Connect to Git</strong> and select your GitHub repository.</li>
                     </ol>
                  </div>
