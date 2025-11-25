@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
       plugins: [react()],
       build: {
         outDir: 'dist',
-        sourcemap: true,
+        sourcemap: false,
         rollupOptions: {
           output: {
             manualChunks: {
@@ -21,15 +21,6 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 5173,
         host: true
-      },
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
-      resolve: {
-        alias: {
-          '@': path.resolve(__dirname, '.'),
-        }
       }
     };
 });
