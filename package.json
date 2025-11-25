@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "next build",
+    "build": "NEXT_TELEMETRY_DISABLED=1 next build && next export -o out",
     "dev": "next dev",
     "preview": "next start -p 3000",
     "deploy": "echo 'Build complete, ready for deployment'",
@@ -22,5 +22,8 @@
     "@types/react-dom": "^18.2.7",
     "typescript": "^5.8.3",
     "wrangler": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
