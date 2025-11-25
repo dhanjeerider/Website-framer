@@ -4,13 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "vite build",
+    "build": "next build",
     "dev": "vite",
     "preview": "vite preview",
-    "deploy": "echo 'Build complete, ready for deployment'"
+    "deploy": "echo 'Build complete, ready for deployment'",
+    "export": "next export -o out"
   },
   "dependencies": {
-    "@google/generative-ai": "^1.30.0",
+    "@google/generative-ai": "latest",
     "lucide-react": "^0.554.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
